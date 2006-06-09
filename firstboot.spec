@@ -1,12 +1,13 @@
 Summary:	Initial system configuration utility
+Summary(pl):	Narzêdzie do pocz±tkowej konfiguracji systemu
 Name:		firstboot
 Version:	1.4.6
 Release:	0.1
 License:	GPL
 Group:		Base
-URL:		http://fedora.redhat.com/projects/config-tools/
 Source0:	%{name}-%{version}.tar.bz2
 # Source0-md5:	bea227cd82be988b9638e239f3380dfb
+URL:		http://fedora.redhat.com/projects/config-tools/
 BuildRequires:	gettext-devel
 #Requires:	/etc/init.d
 #Requires:	authconfig-gtk
@@ -37,8 +38,13 @@ The firstboot utility runs after installation. It guides the user
 through a series of steps that allows for easier configuration of the
 machine.
 
+%description -l pl
+Narzêdzie firstboot uruchamia siê po instalacji. Prowadzi u¿ytkownika
+poprzez seriê kroków umo¿liwiaj±cych ³atw± konfiguracjê maszyny.
+
 %package tui
 Summary:	A text interface for firstboot
+Summary(pl):	Tekstowy interfejs programu firstboot
 Group:		Base
 #Requires:	/etc/init.d
 #Requires:	authconfig
@@ -52,6 +58,10 @@ Group:		Base
 
 %description tui
 firstboot-tui is a text interface for initial system configuration.
+
+%description tui -l pl
+firstboot-tui to tekstowy interfejs do pocz±tkowej konfiguracji
+systemu.
 
 %prep
 %setup -q
