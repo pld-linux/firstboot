@@ -1,5 +1,5 @@
 Summary:	Initial system configuration utility
-Summary(pl.UTF-8):   Narzędzie do początkowej konfiguracji systemu
+Summary(pl.UTF-8):	Narzędzie do początkowej konfiguracji systemu
 Name:		firstboot
 Version:	1.4.6
 Release:	0.1
@@ -44,7 +44,7 @@ poprzez serię kroków umożliwiających łatwą konfigurację maszyny.
 
 %package tui
 Summary:	A text interface for firstboot
-Summary(pl.UTF-8):   Tekstowy interfejs programu firstboot
+Summary(pl.UTF-8):	Tekstowy interfejs programu firstboot
 Group:		Base
 #Requires:	/etc/init.d
 #Requires:	authconfig
