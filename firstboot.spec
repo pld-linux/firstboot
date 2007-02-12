@@ -1,5 +1,5 @@
 Summary:	Initial system configuration utility
-Summary(pl):	Narzêdzie do pocz±tkowej konfiguracji systemu
+Summary(pl.UTF-8):   NarzÄ™dzie do poczÄ…tkowej konfiguracji systemu
 Name:		firstboot
 Version:	1.4.6
 Release:	0.1
@@ -38,13 +38,13 @@ The firstboot utility runs after installation. It guides the user
 through a series of steps that allows for easier configuration of the
 machine.
 
-%description -l pl
-Narzêdzie firstboot uruchamia siê po instalacji. Prowadzi u¿ytkownika
-poprzez seriê kroków umo¿liwiaj±cych ³atw± konfiguracjê maszyny.
+%description -l pl.UTF-8
+NarzÄ™dzie firstboot uruchamia siÄ™ po instalacji. Prowadzi uÅ¼ytkownika
+poprzez seriÄ™ krokÃ³w umoÅ¼liwiajÄ…cych Å‚atwÄ… konfiguracjÄ™ maszyny.
 
 %package tui
 Summary:	A text interface for firstboot
-Summary(pl):	Tekstowy interfejs programu firstboot
+Summary(pl.UTF-8):   Tekstowy interfejs programu firstboot
 Group:		Base
 #Requires:	/etc/init.d
 #Requires:	authconfig
@@ -59,8 +59,8 @@ Group:		Base
 %description tui
 firstboot-tui is a text interface for initial system configuration.
 
-%description tui -l pl
-firstboot-tui to tekstowy interfejs do pocz±tkowej konfiguracji
+%description tui -l pl.UTF-8
+firstboot-tui to tekstowy interfejs do poczÄ…tkowej konfiguracji
 systemu.
 
 %prep
