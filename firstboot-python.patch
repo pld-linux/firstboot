@@ -1,0 +1,24 @@
+--- firstboot-1.99/firstboot/config.py~	2008-07-31 21:45:38.000000000 +0200
++++ firstboot-1.99/firstboot/config.py	2008-08-29 13:41:24.350173838 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python2
++#!/usr/bin/python
+ #
+ # Chris Lumens <clumens@redhat.com>
+ #
+--- firstboot-1.99/progs/firstboot~	2008-07-31 21:45:38.000000000 +0200
++++ firstboot-1.99/progs/firstboot	2008-08-29 13:41:51.218156639 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python2
++#!/usr/bin/python
+ #
+ # Chris Lumens <clumens@redhat.com>
+ #
+--- firstboot-1.99/setup.py~	2008-07-31 21:45:38.000000000 +0200
++++ firstboot-1.99/setup.py	2008-08-29 13:42:17.960410892 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python2
++#!/usr/bin/python
+ 
+ from distutils.core import setup
+ from glob import *
