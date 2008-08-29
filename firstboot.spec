@@ -1,3 +1,4 @@
+# FIXME: where is tui?
 Summary:	Initial system configuration utility
 Summary(pl.UTF-8):	Narzędzie do początkowej konfiguracji systemu
 Name:		firstboot
@@ -31,6 +32,7 @@ poprzez serię kroków umożliwiających łatwą konfigurację maszyny.
 Summary:	A text interface for firstboot
 Summary(pl.UTF-8):	Tekstowy interfejs programu firstboot
 Group:		Base
+Requires(preun):	/sbin/chkconfig
 
 %description tui
 firstboot-tui is a text interface for initial system configuration.
@@ -49,12 +51,13 @@ rm po/ilo.po
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%py_comp $RPM_BUILD_ROOT/usr/share/firstboot
-%py_ocomp $RPM_BUILD_ROOT/usr/share/firstboot
-%py_postclean /usr/share/firstboot
+%py_comp $RPM_BUILD_ROOT%{_datadir}/firstboot
+%py_ocomp $RPM_BUILD_ROOT%{_datadir}/firstboot
+%py_postclean %{_datadir}/firstboot
 
 %find_lang %{name}
 
