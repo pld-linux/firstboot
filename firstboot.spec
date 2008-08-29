@@ -3,7 +3,7 @@ Summary:	Initial system configuration utility
 Summary(pl.UTF-8):	Narzędzie do początkowej konfiguracji systemu
 Name:		firstboot
 Version:	1.99
-Release:	1
+Release:	2
 License:	GPL
 Group:		Base
 # https://fedorahosted.org/releases/f/i/firstboot/ (not yet)
@@ -16,7 +16,6 @@ Requires:	python-pygtk-gtk
 Requires:	python-rhpl
 ExcludeArch:	s390 s390x ppc64
 ExclusiveOS:	Linux
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
