@@ -14,6 +14,7 @@ URL:		http://fedoraproject.org/wiki/FirstBoot
 BuildRequires:	gettext-devel
 Requires:	python-pygtk-gtk
 Requires:	python-rhpl
+Requires:	system-config-users
 ExcludeArch:	s390 s390x ppc64
 ExclusiveOS:	Linux
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -53,10 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-
-%py_comp $RPM_BUILD_ROOT%{_datadir}/firstboot
-%py_ocomp $RPM_BUILD_ROOT%{_datadir}/firstboot
-%py_postclean %{_datadir}/firstboot
+rm $RPM_BUILD_ROOT%{_datadir}/firstboot/modules/additional_cds.py*
 
 %find_lang %{name}
 
@@ -77,7 +75,7 @@ fi
 %attr(754,root,root) /etc/rc.d/init.d/firstboot
 %dir %{_datadir}/firstboot
 %dir %{_datadir}/firstboot/modules
-%{_datadir}/firstboot/modules/*.py[co]
+%{_datadir}/firstboot/modules/*.py
 %{_datadir}/firstboot/themes
 %dir %{py_sitedir}/firstboot
 %{py_sitedir}/firstboot/*.py[co]
