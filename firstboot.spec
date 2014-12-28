@@ -11,7 +11,7 @@ Source0:	%{name}-%{version}.tar.bz2
 # Source0-md5:	8883a4e5b1eb6ddc121741b467fd3760
 Patch0:		%{name}-python.patch
 URL:		http://fedoraproject.org/wiki/FirstBoot
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	python-modules
 BuildRequires:	rpm-pythonprov
 Requires:	python-pygtk-gtk
